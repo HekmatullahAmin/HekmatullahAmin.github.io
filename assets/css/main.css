@@ -3929,6 +3929,21 @@ input, select, textarea {
 
 			}
 
+			/* Fix certificate bullet alignment */
+			#main > .posts article ul {
+				text-align: left;
+				list-style-position: outside;
+				padding-left: 1.5rem;
+			}
+
+			#main > .posts article ul li {
+				text-align: left;
+			}
+
+			#main > .posts article h4 {
+				text-align: left;
+			}
+
 		@media screen and (max-width: 736px) {
 
 			#main > * {
