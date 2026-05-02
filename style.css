@@ -520,6 +520,18 @@ button {
   margin-bottom: var(--space-sm);
 }
 
+.about-list {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+  padding-left: 1.25rem;
+}
+
+.about-list li {
+  margin-bottom: 0.4rem;
+}
+
 .about-location {
   display: flex;
   align-items: center;
