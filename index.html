@@ -1,194 +1,648 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>HekmatullahAminPortfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hekmatullah Amin — Android & Kotlin developer based in Sheffield, England. Building mobile and cross-platform apps with Jetpack Compose and clean architecture." />
+  <title>Hekmatullah Amin — Android Developer</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet" />
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Hekmatullah Amin<br />
-						Software Developer</h1>
-						<p>Step into my world of software development. From coding languages to version control, here's what I bring to the table.
-							 <!-- <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>.</p> -->
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Hekmatullah Amin</a>
-					</header>
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">Hekmatullah<span>.</span></a>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-							<li><a href="generic.html">Certificates</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.instagram.com/hekmatullahamin/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/HekmatullahAmin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/hekmatullah-amin-713a5b244/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://medium.com/@hekmatullahaminullah2" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-						</ul>
-					</nav>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact" class="nav-cta">Contact →</a></li>
+    </ul>
 
-				<!-- Main -->
-					<div id="main">
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-						<!-- Featured Post -->
-						<article class="post featured">
-							<header class="major">
-								<!-- <span class="date">April 25, 2017</span> -->
-								<h2><a href="https://github.com/HekmatullahAmin/BookFinder">BookFinder</a></h2>
-								<p>BookFinder is a Compose Multiplatform application enabling users to search for books and mark them as favorites. Designed for Android, iOS, and desktop, it showcases the power of modern multiplatform development with features like cross-platform compatibility and a user-friendly interface. The app employs advanced development practices such as the Model-View-Intent (MVI) design pattern, and tools like Ktor and Koin. It also features KDoc documentation for easy codebase navigation.</p>
-							</header>
-							<a href="https://github.com/HekmatullahAmin/BookFinder" class="image main"><img src="images/BookFinder.png" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="https://github.com/HekmatullahAmin/BookFinder" class="button large">View Project</a></li>
-							</ul>
-						</article>
-						
-						<article class="post featured">
-							<header class="major" style="text-align: left;">
-								<!-- <span class="date">December 21, 2024</span> -->
-								<h2 style="text-align: center;"><a href="https://github.com/HekmatullahAmin/TaskMinder">TaskMinder</a></h2>
-								<p>TaskMinder is an advanced Android to-do list application designed to streamline task management while showcasing modern Android development practices. Users can create, edit, prioritize, and complete tasks, assign due dates, and set reminders to stay organized and productive. The app offers eight customizable themes (four color palettes in both light and dark modes) and seamless navigation for an intuitive user experience.</p>
-								<ul>
-									<p>Built using Kotlin and Jetpack Compose, TaskMinder employs Firebase services for robust functionality:</p>
-									<li>Authentication: Secure user sign-ins with support for anonymous and email/password login, including account linking.</li>
-									<li>Cloud Firestore: Real-time task synchronization across devices.</li>
-									<li>Crashlytics: Continuous monitoring for app stability and crash reporting.</li>
-									<li>Performance Monitoring: Four custom traces measure the efficiency of key operations, such as task saving and account linking.</li>
-									<li>Remote Config: Dynamic updates to app settings, including feature toggles for alert visibility.</li>
-								</ul>
-								<p>Adhering to Clean Architecture, the app is designed for scalability, maintainability, and testability. TaskMinder incorporates instrumentation tests, and robust exception handling, ensuring reliability and performance. </p>
-							</header>
-							<a href="https://github.com/HekmatullahAmin/TaskMinder" class="image main"><img src="images/TaskMinder.png" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="https://github.com/HekmatullahAmin/TaskMinder" class="button large">View Project</a></li>
-							</ul>
-						</article>				
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section id="hero">
+    <!-- Ambient background -->
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
 
-						<article class="post featured">
-							<header class="major">
-								<!-- <span class="date">April 25, 2017</span> -->
-								<h2><a href="https://github.com/HekmatullahAmin/OffNews">OffNews</a></h2>
-								<p>OffNews is an Android news application built with an offline-first approach, allowing users to browse and read articles without an internet connection by caching content locally. The app automatically syncs new articles and bookmarks once a connection is restored, ensuring a seamless reading experience both online and offline. It features adaptive layouts for various screen sizes, including phones, tablets, and foldables, and allows users to bookmark articles for later reading. OffNews is developed using Kotlin, Jetpack Compose for the UI, Room for local storage, Retrofit for network requests, and Dagger Hilt for dependency injection, following Clean Architecture principles to ensure scalability and maintainability.
-							</header>
-							<a href="https://github.com/HekmatullahAmin/OffNews" class="image main"><img src="images/offnews_app.png" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="https://github.com/HekmatullahAmin/OffNews" class="button large">View Project</a></li>
-							</ul>
-						</article>
+    <div class="hero-inner">
+      <!-- Text content -->
+      <div class="hero-content">
+        <p class="hero-eyebrow">Android · Kotlin · Compose</p>
+        <h1 class="hero-name">
+          Hekmatullah
+          <span class="line-accent">Amin</span>
+        </h1>
+        <p class="hero-sub">Software Developer · England</p>
+        <p class="hero-descriptor">
+          Crafting mobile &amp; cross-platform apps with Kotlin,
+          Compose, and clean architecture.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View Projects →</a>
+          <a href="assets/CV.pdf" class="btn-outline" download>Download CV ↓</a>
+        </div>
+      </div>
 
-						<article class="post featured">
-							<header class="major">
-								<!-- <span class="date">April 25, 2017</span> -->
-								<h2><a href="https://github.com/HekmatullahAmin/little-lemon">Little Lemon</a></h2>
-								<p>LittleLemonApp is an advanced Android application developed as part of the Coursera "Meta Android Developer Professional Certificate" Capstone project. It provides users with the ability to create accounts, browse and select menu items, add them to a cart, and complete orders with customizable delivery and payment options. The app also includes features for user profile management and theme customization, supporting Light, Dark, and Dynamic themes. Developed using Kotlin and SQLite, with Jetpack Compose for a modern UI, Room for local database management, and Retrofit for network requests, the app follows Clean Architecture principles for scalability and maintainability. Additionally, it incorporates unit tests and instrumentation tests to ensure functionality and UI performance.
-							</header>
-							<a href="https://github.com/HekmatullahAmin/little-lemon" class="image main"><img src="images/LittleLemon.jpg" alt="" /></a>
-							<ul class="actions special">
-								<li><a href="https://github.com/HekmatullahAmin/little-lemon" class="button large">View Project</a></li>
-							</ul>
-						</article>
+      <!-- Photo -->
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-photo-wrap">
+          <!-- Replace with real photo: images/hero-photo.jpg -->
+          <div class="hero-photo-placeholder">
+            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="40" cy="28" r="16" stroke="#7A7A85" stroke-width="2"/>
+              <path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="#7A7A85" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <span>hero-photo.jpg</span>
+          </div>
+        </div>
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          <span class="hero-badge-text">Open to opportunities</span>
+        </div>
+      </div>
+    </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="https://github.com/HekmatullahAmin/ToMe">ToMe<br />
-											Budget control, Schedule</a></h2>
-									</header>
-									<a href="https://github.com/HekmatullahAmin/ToMe" class="image fit"><img src="images/tome.png" alt="" /></a>
-									<p>ToMe is an Android application designed to enhance personal organization and financial management. It allows users to take and manage notes, set and receive reminders for important events, track financial transactions and budget with precision, and organize their weekly schedules. Built primarily with Java and SQLite for robust data handling.<br />
-									<ul class="actions special">
-										<li><a href="https://github.com/HekmatullahAmin/ToMe" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="https://github.com/HekmatullahAmin/FriendHub">FriendHub</h2>
-									</header>
-									<a href="https://github.com/HekmatullahAmin/FriendHub" class="image fit"><img src="images/FriendHub.jpg" alt="" /></a>
-									<p>FriendHub is an Instagram-like social media app that enables users to share photos and videos, follow friends, and interact through likes and comments. Developed using Kotlin, the app leverages Cloud Firestore for backend data management and Firebase Authentication for secure user login. Following the MVVM architecture pattern, FriendHub ensures a clean, scalable codebase. Users can also customize their profiles, send friend requests, and engage with their network seamlessly. The app is built using Android Studio and XML for its UI design, offering a modern, user-friendly experience.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/HekmatullahAmin/FriendHub" class="button">View Project</a></li>
-									</ul>
-								</article>							
-								<article>
-									<header>
-										<h2><a href="https://github.com/HekmatullahAmin/Click">Click</h2>
-									</header>
-									<a href="https://github.com/HekmatullahAmin/Click" class="image fit"><img src="images/click_chat.png" alt="" /></a>
-									<p>Click is a real-time messaging app that enables users to chat instantly with friends and family, create chat rooms, and view message history. Developed using Java and built on Android Studio, Click utilizes Firebase Realtime Database for seamless message synchronization and Firebase Authentication for secure user login. The app allows users to customize their profiles with pictures and usernames, providing a dynamic and engaging chat experience.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/HekmatullahAmin/Click" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
-					</div>
+    <div class="hero-scroll-hint">Scroll</div>
+  </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p>England</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+44) </a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">hek.amin.2000@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.instagram.com/hekmatullahamin/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/HekmatullahAmin" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/hekmatullah-amin-713a5b244/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://medium.com/@hekmatullahaminullah2" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="about-grid">
+        <!-- Text -->
+        <div class="reveal">
+          <p class="section-label">About Me</p>
+          <h2 class="about-heading">Building software that people actually enjoy using.</h2>
+          <p class="about-text">
+            I'm a software developer based in England with a focus on Android and
+            cross-platform mobile development. My work lives at the intersection of
+            clean architecture and intuitive user experience — apps that feel as good
+            as they perform.
+          </p>
+          <p class="about-text">
+            I primarily work with Kotlin and Jetpack Compose, with a growing focus on
+            Compose Multiplatform and KMM for reaching iOS from a single codebase.
+            I care deeply about code quality, testability, and the kind of thoughtful
+            engineering that scales.
+          </p>
+          <div class="about-location">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M7 1C4.791 1 3 2.791 3 5c0 3.5 4 8 4 8s4-4.5 4-8c0-2.209-1.791-4-4-4z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="7" cy="5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            Eckington, Sheffield, England
+          </div>
+        </div>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        <!-- Stats -->
+        <div class="about-stats">
+          <div class="stat-pill">
+            <div class="stat-pill-value">7+</div>
+            <div class="stat-pill-label">Projects Shipped</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-value">2+</div>
+            <div class="stat-pill-label">Years Experience</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-value">Kotlin · Compose</div>
+            <div class="stat-pill-label">Primary Stack</div>
+          </div>
+          <div class="stat-pill">
+            <div class="stat-pill-value">Firebase · Ktor</div>
+            <div class="stat-pill-label">Backend &amp; Networking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			</div>
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="projects-header reveal">
+        <h2 class="section-heading">Projects</h2>
+        <span class="projects-count">(07)</span>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="projects-grid">
 
-	</body>
+        <!-- BookFinder -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/BookFinder.png" alt="BookFinder app screenshot" loading="lazy" />
+            <span class="project-category">Multiplatform</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">BookFinder</h3>
+            <p class="project-desc">
+              Cross-platform book discovery app built with Compose Multiplatform
+              and Ktor, targeting Android and iOS from a shared codebase.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Compose Multiplatform</span>
+              <span class="tag">Ktor</span>
+              <span class="tag">Koin</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/BookFinder" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <!-- TaskMinder -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/TaskMinder.png" alt="TaskMinder app screenshot" loading="lazy" />
+            <span class="project-category">Android</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">TaskMinder</h3>
+            <p class="project-desc">
+              Task management app with real-time sync via Firebase Firestore.
+              Features MVI architecture, offline support, and push notifications.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">MVI</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/TaskMinder" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <!-- OffNews -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/offnews_app.png" alt="OffNews app screenshot" loading="lazy" />
+            <span class="project-category">Offline-First</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">OffNews</h3>
+            <p class="project-desc">
+              News aggregator with a robust offline-first architecture using Room
+              and WorkManager. Reads like a native app regardless of connectivity.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Room</span>
+              <span class="tag">Retrofit</span>
+              <span class="tag">WorkManager</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/OffNews" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <!-- Little Lemon -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/LittleLemon.jpg" alt="Little Lemon restaurant app screenshot" loading="lazy" />
+            <span class="project-category">Meta Capstone</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Little Lemon</h3>
+            <p class="project-desc">
+              Android capstone for the Meta Android Developer Certificate.
+              Restaurant ordering app with menu browsing, SQLite persistence, and Compose UI.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">Room</span>
+              <span class="tag">MVVM</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/little-lemon" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <!-- ToMe -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/tome.png" alt="ToMe budget and schedule app screenshot" loading="lazy" />
+            <span class="project-category">Android</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">ToMe</h3>
+            <p class="project-desc">
+              Personal finance and scheduling app. Tracks budgets, income,
+              and upcoming events in one clean Compose interface.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Jetpack Compose</span>
+              <span class="tag">Room</span>
+              <span class="tag">Clean Architecture</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/ToMe" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <!-- FriendHub -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/FriendHub.jpg" alt="FriendHub social media app screenshot" loading="lazy" />
+            <span class="project-category">Social</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">FriendHub</h3>
+            <p class="project-desc">
+              Social networking app with user profiles, posts, and follows.
+              Built on Firebase with Dagger Hilt and MVVM architecture.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Dagger Hilt</span>
+              <span class="tag">MVVM</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/FriendHub" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <!-- Click -->
+        <article class="project-card reveal">
+          <div class="project-image-wrap">
+            <img src="images/click_chat.png" alt="Click real-time chat app screenshot" loading="lazy" />
+            <span class="project-category">Real-Time</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-name">Click</h3>
+            <p class="project-desc">
+              Real-time chat app powered by Firebase Realtime Database.
+              Supports one-on-one conversations, user presence, and image sharing.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Coroutines</span>
+              <span class="tag">XML</span>
+            </div>
+            <a href="https://github.com/HekmatullahAmin/Click" class="project-link" target="_blank" rel="noopener">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CERTIFICATES
+       ============================================================ -->
+  <section id="certificates" class="section">
+    <div class="section-inner">
+      <div class="reveal">
+        <p class="section-label">Credentials</p>
+        <h2 class="section-heading">Certificates</h2>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/Meta-Android App Capstone.jpg" alt="Meta Android App Capstone certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Android App Capstone</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/Meta-Advanced Programming in Kotlin.jpg" alt="Meta Advanced Programming in Kotlin certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Advanced Programming in Kotlin</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/Meta-Create the User Interface in Android Studio.jpg" alt="Meta Create the User Interface in Android Studio certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Create the User Interface in Android Studio</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/Meta-Working with Data in Android.jpg" alt="Meta Working with Data in Android certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Working with Data in Android</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/meta_programming_fundamentals_in_kotlin.jpg" alt="Meta Programming Fundamentals in Kotlin certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Programming Fundamentals in Kotlin</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/meta_Principles of UX_UI design.jpg" alt="Meta Principles of UX/UI Design certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Principles of UX/UI Design</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/meta-version control.png" alt="Meta Version Control certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Meta</p>
+            <p class="cert-name">Version Control</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/Google Play Store Listing Certificate.jpg" alt="Google Play Store Listing certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Google</p>
+            <p class="cert-name">Play Store Listing Certificate</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/SoftwareArchitectureFoundations.jpg" alt="Software Architecture Foundations certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">LinkedIn Learning</p>
+            <p class="cert-name">Software Architecture Foundations</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/SoftwareDesignFromRequirementsToRelease.jpg" alt="Software Design: From Requirements to Release certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">LinkedIn Learning</p>
+            <p class="cert-name">Software Design: From Requirements to Release</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/SoftwareDesignModelingWithUML.jpg" alt="Software Design: Modeling with UML certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">LinkedIn Learning</p>
+            <p class="cert-name">Software Design: Modeling with UML</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/ProgrammingFoundationsDesignPatterns.jpg" alt="Programming Foundations: Design Patterns certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">LinkedIn Learning</p>
+            <p class="cert-name">Programming Foundations: Design Patterns</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/kotlin_development_masterclass.jpg" alt="Kotlin Development Masterclass certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-name">Kotlin Development Masterclass</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/android_firebase _firestore_masterclass.png" alt="Android Firebase Firestore Masterclass certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-name">Android Firebase &amp; Firestore Masterclass</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/android_and_java_developer_course_build_21_apps.jpg" alt="Android and Java Developer Course certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-name">Android &amp; Java Developer Course: Build 21 Apps</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/java_programming_masterclass.jpg" alt="Java Programming Masterclass certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-name">Java Programming Masterclass</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/git_and_github_guide.jpg" alt="Git and GitHub Guide certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Udemy</p>
+            <p class="cert-name">Git &amp; GitHub — The Complete Guide</p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-image-wrap">
+            <img src="images/introduction_to_android_mobile_application_development.jpg" alt="Introduction to Android Mobile App Development certificate" loading="lazy" />
+          </div>
+          <div class="cert-body">
+            <p class="cert-issuer">Coursera</p>
+            <p class="cert-name">Introduction to Android Mobile Application Development</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="skills-heading-wrap reveal">
+        <p class="section-label" style="justify-content: center;">Tech Stack</p>
+        <h2 class="section-heading" style="text-align: center;">Skills &amp; Tools</h2>
+      </div>
+    </div>
+
+    <div class="marquee-wrapper" id="marquee-wrapper">
+      <!-- Row 1: left to right -->
+      <div class="marquee-track marquee-track-1">
+        <span class="skill-pill">Kotlin</span>
+        <span class="skill-pill">Jetpack Compose</span>
+        <span class="skill-pill">Android</span>
+        <span class="skill-pill">Firebase</span>
+        <span class="skill-pill">Ktor</span>
+        <span class="skill-pill">Koin</span>
+        <span class="skill-pill">Room</span>
+        <span class="skill-pill">Coroutines</span>
+        <span class="skill-pill">MVI</span>
+        <span class="skill-pill">MVVM</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="skill-pill">Kotlin</span>
+        <span class="skill-pill">Jetpack Compose</span>
+        <span class="skill-pill">Android</span>
+        <span class="skill-pill">Firebase</span>
+        <span class="skill-pill">Ktor</span>
+        <span class="skill-pill">Koin</span>
+        <span class="skill-pill">Room</span>
+        <span class="skill-pill">Coroutines</span>
+        <span class="skill-pill">MVI</span>
+        <span class="skill-pill">MVVM</span>
+      </div>
+
+      <!-- Row 2: right to left -->
+      <div class="marquee-track marquee-track-2">
+        <span class="skill-pill">Compose Multiplatform</span>
+        <span class="skill-pill">KMM</span>
+        <span class="skill-pill">Clean Architecture</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">Unit Testing</span>
+        <span class="skill-pill">Retrofit</span>
+        <span class="skill-pill">Dagger Hilt</span>
+        <span class="skill-pill">SQLite</span>
+        <span class="skill-pill">XML</span>
+        <span class="skill-pill">REST APIs</span>
+        <!-- Duplicate for seamless loop -->
+        <span class="skill-pill">Compose Multiplatform</span>
+        <span class="skill-pill">KMM</span>
+        <span class="skill-pill">Clean Architecture</span>
+        <span class="skill-pill">Git</span>
+        <span class="skill-pill">Unit Testing</span>
+        <span class="skill-pill">Retrofit</span>
+        <span class="skill-pill">Dagger Hilt</span>
+        <span class="skill-pill">SQLite</span>
+        <span class="skill-pill">XML</span>
+        <span class="skill-pill">REST APIs</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="contact-inner">
+        <div class="reveal">
+          <p class="contact-eyebrow">Let's Work Together</p>
+          <h2 class="contact-heading">Got a project<br /><span>in mind?</span></h2>
+          <p class="contact-sub">I'm open to full-time roles, and interesting collaborations.</p>
+        </div>
+
+        <div class="reveal">
+          <a href="mailto:hek.amin.2000@gmail.com" class="contact-email-btn">
+            Send me an email →
+          </a>
+        </div>
+
+        <div class="social-links reveal">
+          <!-- GitHub -->
+          <a href="https://github.com/HekmatullahAmin" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/hekmatullah-amin-713a5b244/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/hekmatullahamin/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+
+          <!-- Medium -->
+          <a href="https://medium.com/@hekmatullahaminullah2" class="social-link" target="_blank" rel="noopener" aria-label="Medium">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-bar reveal">
+          <p class="footer-copy">&copy; 2026 Hekmatullah Amin</p>
+          <p class="footer-tag">Built with <span>vanilla HTML &middot; CSS &middot; JS</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="main.js"></script>
+</body>
 </html>
